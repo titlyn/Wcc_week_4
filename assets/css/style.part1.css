@@ -31,7 +31,7 @@
 }
 
 #logo div {
-    background: pink;
+    background:rgb(236, 1, 111);
     border-radius: 50%;
 }
 
@@ -82,12 +82,25 @@ header #nav {
         width: 100%;
     }
 
+    #logo #c1 {
+        background: orange;
+    }
+
+    #logo #c2 {
+        background: rgb(236, 1, 111);
+    }
+
+    #nav #logo {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+
     #nav .item {
         position: relative;
     }
 
     #nav a {
-        color: gray;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 500;
         font-size: 1rem;
         padding: 10px 20px;
@@ -98,7 +111,7 @@ header #nav {
         position: absolute;
         width: 0;
         height: 2px;
-        background: rgb(185, 27, 177);
+        background: rgb(236, 1, 111);
         left: 0;
         bottom: -4px;
         transition: ease .42s;
@@ -118,6 +131,8 @@ header #nav {
     }
 
     #left .buttons .button {
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: white;
         font-size: 14px;
         display: flex;
@@ -128,7 +143,8 @@ header #nav {
         line-height: 55px;
         border-radius: 15px;
         padding: 0 20px;
-        border: 2px solid gray;
+        border: 2px solid grey;
+        transition: .34s;
     }
 
     #left .buttons .button img {
@@ -138,15 +154,20 @@ header #nav {
         margin-right: 10px;
     }
 
+    .button:hover {
+        opacity: 0.8;
+        transform: translateY(-10px);
+    }
+
     #left #b1 {
-        background: linear-gradient(110deg, rgb(235, 28, 183)70%, rgb(255, 136, 0));
+        background: linear-gradient(110deg, rgb(236, 1, 111)70%, orange);
         border: none;
         margin-right: 20px;
         width: 150px;
     }
 
     #left #b2 {
-        color: rgb(185, 27, 177);
+        color: rgb(236, 1, 111);
         width: 200px;
     }
 
@@ -171,14 +192,16 @@ header #nav {
 
     .descri {
         margin-bottom: 20px;
-        color: rgb(185, 27, 177);
+        color: rgb(236, 1, 111);
     }
 
     .descri h1 {
         font-size: 4rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .text {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin-bottom: 50px;
     }
 
