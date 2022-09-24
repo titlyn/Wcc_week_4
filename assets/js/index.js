@@ -6,9 +6,10 @@ function myFunction () {
 window.onclick = function (event) {
     if (!event.target.matches('.menu')) {
     var dropdowns = document.getElementsByClassName("list");
-    var openDropdown = dropdowns[i];
+    var openDropdown;
         if (openDropdown.classList.contains('show')) {
             openDropdown.classList.remove('show');
         }
     }
 }
+
