@@ -11,11 +11,48 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="nav">
+            <div id="logo">
+                <div id="c1"></div>
+                <div id="c2"></div> CNNCT
+            </div>
+
+            <div id="items">
+
+                <div onclick="myFunction()" class="menu" id="menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div id="list" class="list">
+                    <li class="item"><a href="#">Home</a></li>
+                    <li class="item"><a href="#">About</a></li>
+                    <li class="item"><a href="#">Products</a></li>
+                    <li class="item"><a href="#">Contact</a></li>
+                    <li class="item"><a href="#">Login</a></li>
+                </div>
+            </div>
         </nav>
     </header>
 
     <div id="left">
+        <div class="profile1">
+            <img src="./assets/images/girl2.jpg" alt="">
+        </div>
+
+        <div class="descri">
+            <h1>Reinventing the<br>way you connect</h1>
+        </div>
+
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <div class="buttons">
+            <div id="b1" class="button">Start trial</div>
+            <div id="b2" class="button"><img src="./assets/svgs/play.svg" alt="">Watch demo</div>
+        </div>
         <div class="img-container">
             <img src="./assets/images/girl1.jpg" alt="A girl pic" class="rounded bordered shadowed">
         </div>
@@ -74,5 +111,7 @@
         </div>
 
     </div>
+
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
