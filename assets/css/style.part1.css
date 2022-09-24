@@ -175,7 +175,7 @@ body {
 }
 
 #left #b1 {
-    background: linear-gradient(110deg, rgb(236, 1, 111)70%, orange);
+    background: linear-gradient(110deg, rgb(236, 1, 111) 70%, orange);
     border: none;
     margin-right: 20px;
     width: 150px;
