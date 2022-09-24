@@ -77,8 +77,8 @@ body {
 .show {
     position: absolute;
     width: 50%;
-    top: 7rem;
-    left: 45%;
+    top: 6rem;
+    left: 44%;
     right: 0;
     border-radius: 10px;
     display: flex;
@@ -224,8 +224,8 @@ body {
     .show {
         position: absolute;
         width: 50%;
-        top: 7rem;
-        left: 45%;
+        top: 6rem;
+        left: 46%;
         right: 0;
         display: flex;
         flex-direction: column;
@@ -281,8 +281,8 @@ body {
     .show {
         position: absolute;
         width: 50%;
-        top: 7rem;
-        left: 46%;
+        top: 6rem;
+        left: 47%;
         right: 0;
         display: flex;
         flex-direction: column;
@@ -321,6 +321,14 @@ body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 500;
         font-size: 1rem;
+        padding: 15px 20px 15px 20px;
+        transition: all .34s;
+    }
+
+    a:hover {
+        border: 2px solid rgb(236, 1, 111);
+        border-radius: 10px;
+
     }
 
     .list {
@@ -329,5 +337,10 @@ body {
         justify-content: right;
         top: 30px;
         background: none;
+    }
+
+    #login a{
+        border-radius: 10px;
+        border: 2px solid rgb(236, 1, 111);
     }
 }
