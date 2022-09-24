@@ -16,23 +16,57 @@
     </header>
 
     <div id="left">
-        <div class="rounded bordered shadowed img-container">
-            <img src="./assets/images/girl1.jpg" alt="A girl pic">
+        <div class="img-container">
+            <img src="./assets/images/girl1.jpg" alt="A girl pic" class="rounded bordered shadowed">
         </div>
     </div>
     
     <div id="right">
-        <div class="rounded bordered shadowed img-container">
-            <img src="./assets/images/girl3.jpg" alt="A girl pic">
+        <div class="img-container">
+            <img src="./assets/images/girl3.jpg" alt="A girl pic" class="rounded bordered shadowed">
+        </div>
+
+        <div id="cards">
+            <div class="card flex">
+                <div class="img-container active">
+                    <img src="./assets/images/girl5.jpg" class="rounded" alt="">
+                </div>
+                <div class="details">
+                    <p class="name flex">Sam</p>
+                    <p class="post flex">Product Manager</p>
+                </div>
+                <div class="mini-footer flex">
+                    <a href="#" class="material-icons" id="SamPhone">phone</a>
+                    <a href="#" class="material-icons" id="SamMsg">message</a>
+                </div>
+            </div>
+
+            <div class="card flex" id="hasProgressBar">
+                <div class="img-container active">
+                    <img src="./assets/images/girl2.jpg" alt="" class="rounded">
+                </div>
+                <div class="details">
+                    <p class="name flex">Jane</p>
+                    <p class="post flex">CEO</p>
+                    <div class="mini-footer flex">
+                        <div id="progressBar">
+                            <div id="pinkProgess"></div>
+                        </div>
+                        <div id="label">Transfeing file</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="principal" class="flex">
             <div class="img-container">
                 <img src="./assets/images/men.jpg" alt="A man">
             </div>
-            <div id="details" class="flex">
-                <p class="name flex">John</p>
-                <p class="post flex">Account Manager</p>
+            <div class="details flex">
+                <div class="info flex">
+                    <p class="name flex">John</p>
+                    <p class="post flex">Account Manager</p>
+                </div>
                 <a href="tel:+0000000" id="phone" class="rounded bordered flex">
                     <i class="material-icons">phone</i>
                 </a>
