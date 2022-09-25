@@ -175,7 +175,7 @@ img.rounded {
     width: 50px;
     margin-left: auto;
     margin-right: 8px;
-    animation: shake 0.5s ease-in-out alternate;
+    animation: shake 0.5s ease-in-out 2s alternate;
     animation-iteration-count: infinite;
 }
 
@@ -207,7 +207,7 @@ img.rounded {
     padding: 40px 10px 20px 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-image: linear-gradient(330deg, rgb(218, 218, 218), white);
+    background-color: rgba(255, 255, 255, 0.884);
 }
 
 #discussion .chat {
@@ -215,19 +215,24 @@ img.rounded {
     flex-direction: column;
     justify-content: center;
 
-    font-size: 13px;
+    font-size: 10px;
 
-    width: 200px;
-    padding: 20px 25px;
+    width: 145px;
+    padding: 5px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
 
-    border-radius: 20px;
+    border-radius: 16px;
+    text-align: center;
 }
 
 #discussion .chat.left {
     background-color: white;
     border-bottom-left-radius: 0px;
+}
+
+#discussion .chat.right:nth-of-type(3){
+    padding: 20px 15px !important;
 }
 
 #discussion .chat.right {
@@ -243,7 +248,12 @@ img.rounded {
     align-self: flex-end;
     position: absolute;
     right: -10px;
-    top: -20px;
+    top: -15px;
+}
+
+#discussion .chat.right .img-container img{
+    width: 40px;
+    height: 40px;
 }
 
 #discussion .chat.right .lignes {
@@ -483,8 +493,8 @@ img.rounded {
 
     #right {
         position: relative;
-        padding: 50px;
-        background-position-x: 40px !important;
+        padding: 50px 0px;
+        background-position-x: 24% !important;
         background-position-y: 20px !important;
     }
 
@@ -495,7 +505,7 @@ img.rounded {
         position: relative;
         flex-direction: column;
         background-image: none;
-        animation: shake1 0.5s ease-in-out alternate;
+        animation: shake1 0.5s ease-in-out 2s alternate;
         animation-iteration-count: infinite;
     }
 
@@ -510,9 +520,9 @@ img.rounded {
         width: 100%;
         height: 100%;
         border-radius: 20px;
-        background-image: linear-gradient(rgba(240, 240, 240, 0), rgba(240, 240, 240, 0), rgba(0, 0, 0, 0.582));
-        background-image: -o-linear-gradient(rgba(240, 240, 240, 0), rgba(240, 240, 240, 0), rgba(0, 0, 0, 0.582));
-        background-image: -moz-linear-gradient(rgba(240, 240, 240, 0), rgba(240, 240, 240, 0), rgba(0, 0, 0, 0.582));
+        background-image: linear-gradient(rgba(240, 240, 240, 0), rgba(240, 240, 240, 0), rgba(0, 0, 0, 0.382), rgba(0, 0, 0, 0.382));
+        background-image: -o-linear-gradient(rgba(240, 240, 240, 0), rgba(240, 240, 240, 0), rgba(0, 0, 0, 0.382), rgba(0, 0, 0, 0.382));
+        background-image: -moz-linear-gradient(rgba(240, 240, 240, 0), rgba(240, 240, 240, 0), rgba(0, 0, 0, 0.382), rgba(0, 0, 0, 0.382));
         
         
     }
@@ -552,8 +562,6 @@ img.rounded {
 
     #discussion .chat {
         z-index: 1000;
-        width: 200px;
-        padding: 15px 20px;
     }
 
     #discussion .chat.left{
@@ -613,17 +621,109 @@ img.rounded {
         margin: auto;
     }
 
-    nav{
+    header, header *{
+        overflow-y: visible !important;
+    } 
+
+    nav, .overlay, .overlay-content{
         display: flex;
-        justify-content: space-between;
+        justify-content: right;
         align-items: center;
         background: transparent;
+        position: static;
+        height: 100%;
+        width: 100%;
     }
 
-    #items{
-        display: none;
+    nav a{
+        color: grey !important;
+        font-size: 14px !important;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        box-sizing: border-box; 
+        padding: 8px 28px !important;
+        margin-right: 10px;
     }
+
+    nav a:nth-last-of-type(1){
+        margin-right: 0;
+        border-color: grey;
+    }
+
+    .overlay-content{
+        margin: auto;
+    }
+
+    #items, .closebtn{
+        display: none !important;
+    }
+
+    .descri h1 img{
+    position: absolute;
+    top: 45px;
+    left: 400px;
+}
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+/* Large devices (laptops/desktops, 975px and up) */
+@media only screen and (min-width: 975px) {
+    body{
+        box-sizing: border-box; 
+        padding: 0 !important;
+    }
+    .content{
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    nav, content{
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+    #left{
+        width: max-content;
+        margin: 25px auto;
+    }
+
+    #right{
+        width: 55%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #principal .img-container {
+        width: 100%;
+        height: 450px;
+    }
+
+    #cards .card:nth-of-type(1){
+        left: -20px;
+        top: 170px;
+    }
+
+    #hasProgressBar{
+        right: -20px;
+        top: -110px;
+    }
+    #discussion .chat.right{
+        position: relative;
+        top: 70px;
+        left: 40px;
+    }
+    #discussion .chat.left{
+        position: relative;
+        margin: auto 0px;
+        background-color: white;
+        color: grey;
+        right: -250px;
+        top: 40px;
+    }
+    .descri h1 img{
+        position: absolute;
+        top: 60px;
+        right: 80px;
+        z-index: 100;
+    }
+}

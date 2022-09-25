@@ -26,7 +26,6 @@
     padding: 8px;
     text-decoration: none;
     font-size: 24px;
-    color: #818181;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
   }
@@ -53,3 +52,34 @@
       right: 35px;
     }
   } 
+
+  body{
+    position: relative;
+    background-image: url('../svgs/Background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.932);
+  }
+
+  header::before{
+    z-index: 1;
+    content: '';
+    position: absolute;
+      right: 0;
+    border-bottom-left-radius: 100%;
+    width: 200px;
+    height: 130px;
+    background-color: rgb(243, 243, 243);
+  }
+
+  .content::after{
+    z-index: 1;
+    content: '';
+    position: absolute;
+    bottom: 0;
+      left: 0;
+    border-top-right-radius: 100%;
+    width: 200px;
+    height: 130px;
+    background-color: rgb(243, 243, 243);
+  }
