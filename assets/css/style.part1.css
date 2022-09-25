@@ -118,6 +118,10 @@ nav a:hover{
     color: rgb(156, 11, 96);
 }
 
+.card .name{
+    color: var(--fushia);
+}
+
 .descri h1 {
     margin-top: 10px;
     margin-bottom: 5px;
