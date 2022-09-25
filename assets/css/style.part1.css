@@ -1,3 +1,8 @@
+:root {
+    --fushia: rgb(255, 0, 76);
+    --beige: rgb(235, 175, 107);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,10 +15,11 @@
 body {
     padding: 20px;
     margin: 10px;
+    box-sizing: border-box;
 }
 
 #menu div {
-    background: rgb(236, 1, 111);
+    background: var(--fushia);
     border-radius: 2px;
     width: 30px;
     height: 5px;
@@ -25,8 +31,8 @@ body {
     justify-content: space-between;
     align-items: center;
     background: transparent;
-    height: 100px;
-    width: 100%;
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 20px;
     background: white;
 }
 
@@ -45,13 +51,12 @@ body {
 }
 
 #logo {
-    margin-left: 10px;
     display: flex;
     align-items: center;
 }
 
 #logo div {
-    background:rgb(236, 1, 111);
+    background:var(--fushia);
     border-radius: 50%;
 }
 
@@ -77,13 +82,12 @@ body {
 .show {
     position: absolute;
     width: 50%;
-    top: 6rem;
     left: 44%;
     right: 0;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    background: rgb(236, 1, 111);
+    background: var(--fushia);
     text-align: center;
     transition: all .35s ease;
 }
@@ -107,83 +111,102 @@ body {
     top: 20px;
 }
 
-#left .profile1 {
+#left{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70px;
-    width: 70px;
-    background: #fff;
-    box-shadow: 8px 8px 12px grey;
-    border-radius: 50%;
-    margin-left: 100px;
-    margin-bottom: 50px;
+    flex-direction: column;
 }
 
-#left .profile1 img {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
+#left .img-container:nth-of-type(1){
+    margin-left: 15px;
+    margin-bottom: 25px;
 }
 
 .descri {
+    line-height: 40px;
     margin-bottom: 20px;
-    color: rgb(236, 1, 111);
+    color: rgb(156, 11, 96);
 }
 
 .descri h1 {
-    font-size: 3rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 570px;
+    position: relative;
+    font-size: 2.8rem;
+}
+
+.descri h1 img{
+    position: absolute;
+    top: -35px;
+    right: 2.4rem;
+}
+
+.text{
+    max-width: 320px;
 }
 
 .text p {
+    font-size: 14px;
     color: grey;
     margin-bottom: 20px;
 }
 
 #left .buttons {
     display: flex;
+    flex-direction: column;
 }
 
 #left .buttons .button {
+    display: flex;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     font-size: 14px;
-    display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 600;
-    height: 60px;
-    line-height: 55px;
     border-radius: 15px;
-    padding: 0 20px;
-    border: 2px solid grey;
-    transition: .34s;
-}
 
-#left .buttons .button img {
-    margin-top: -4px;
-    height: 20px;
-    width: 20px;
-    margin-right: 10px;
+    box-sizing: border-box;
+    padding: 18px 30px;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 325px;
+    height: 55px;
+
+
+    border: 2px solid lightgrey;
+    transition: .34s ease-in-out;
 }
 
 .button:hover {
+    cursor: pointer;
     opacity: 0.8;
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 #left #b1 {
-    background: linear-gradient(110deg, rgb(236, 1, 111) 70%, orange);
+    background: linear-gradient(120deg, var(--fushia), var(--fushia), orange);
     border: none;
-    margin-right: 20px;
-    width: 150px;
 }
 
 #left #b2 {
-    color: rgb(236, 1, 111);
-    width: 200px;
+    color: var(--fushia);
+    background-color: white;
+}
+#left #b2 span{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#left #b2 i{
+    position: relative;
+    right: 15px;
+}
+
+#left #b2:hover{
+    background-color: orange;
+    border: none;
+    color: white;
 }
 
 
@@ -192,8 +215,6 @@ body {
 
 /* Small devices (portrait tablets and large phones, 550px and up) */
 @media only screen and (min-width: 550px) {
-
-
     #nav #logo {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: bold;
@@ -229,118 +250,22 @@ body {
         right: 0;
         display: flex;
         flex-direction: column;
-        background: rgb(236, 1, 111);
+        background: var(--fushia);
         text-align: center;
         transition: all .35s ease;
     }
 
-    .list a {
-        display: block;
-        padding: 1rem;   
-        margin: 1.3rem;
-    }
-
-    .list a:hover{
-        opacity: 0.8;
-        transform: translateY(-10px);
-    }
-
-    .list a::after{
-        display: none;
-    }
-    .list.active{
-        top: 70px;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    #nav {
-        height: 100px;
-        width: 100%;
-        background: white;
-    }
-
-    #nav #logo {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: bold;
-    }
-
-    #nav a {
-        color: #fff;
-    }
-
-    #menu {
-        cursor: pointer;
-    }
-
-    .list {
-        display: none;
-    }
-
-    .show {
-        position: absolute;
-        width: 50%;
-        top: 6rem;
-        left: 47%;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        background: rgb(236, 1, 111);
-        text-align: center;
-        transition: all .35s ease;
-    }
-
-    .list a {
-        display: block;
-        padding: 1rem;   
-        margin: 1.3rem;
-    }
-
-    .list a:hover{
-        opacity: 0.8;
-        transform: translateY(-10px);
-    }
-
-    .list a::after{
-        display: none;
-    }
-    .list.active{
-        top: 70px;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    #menu {
-        display: none;
-    }
-
-    #nav #items .list .item a {
-        color: black;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 500;
-        font-size: 1rem;
-        padding: 15px 20px 15px 20px;
-        transition: all .34s;
-    }
-
-    a:hover {
-        border: 2px solid rgb(236, 1, 111);
-        border-radius: 10px;
-
-    }
-
-    .list {
-        display: flex;
+    #left .buttons{
         flex-direction: row;
-        justify-content: right;
-        top: 30px;
-        background: none;
     }
 
-    #login a{
-        border-radius: 10px;
-        border: 2px solid rgb(236, 1, 111);
+    #left .buttons .button {
+        width: 190px;
+        margin-left: 0; 
+        margin-right: 0; 
+    }
+
+    #b2{
+        margin-left: 25px !important;
     }
 }

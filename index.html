@@ -1,174 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wcc week 4</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.part1.css">
-    <link rel="stylesheet" href="./assets/css/style.part2.css">
-</head>
-<body>
-    <header>
-        <nav id="nav">
-            <div id="logo">
-                <div id="c1"></div>
-                <div id="c2"></div> CNNCT
-            </div>
 
-            <div id="items">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wcc week 4</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/sideMenu.css">
+        <link rel="stylesheet" href="./assets/css/style.part1.css">
+        <link rel="stylesheet" href="./assets/css/style.part2.css">
+    </head>
 
-                <div onclick="myFunction()" class="menu" id="menu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+    <body>
+        <header>
+            <nav id="nav">
+                <div id="logo">
+                    <div id="c1"></div>
+                    <div id="c2"></div> CNNCT
                 </div>
 
-                <div id="list" class="list">
-                    <li class="item"><a href="#">Home</a></li>
-                    <li class="item"><a href="#">About</a></li>
-                    <li class="item"><a href="#">Products</a></li>
-                    <li class="item"><a href="#">Contact</a></li>
-                    <li id="login" class="item"><a href="#">Login</a></li>
+                <div id="items">
+                    <div onclick="openNav()" id="menu">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
 
-    <div id="left">
-        <div class="profile1">
-            <img src="./assets/images/girl2.jpg" alt="">
-        </div>
+                <!-- The overlay -->
+                <div id="myNav" class="overlay">
 
-        <div class="descri">
-            <h1>Reinventing the<br>way you connect</h1>
-        </div>
+                    <!-- Button to close the overlay navigation -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-        <div class="text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
+                    <!-- Overlay content -->
+                    <div class="overlay-content">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Products</a>
+                        <a href="#">Contact</a>
+                        <a href="#">login</a>
+                    </div>
 
-        <div class="buttons">
-            <div id="b1" class="button">Start trial</div>
-            <div id="b2" class="button"><img src="./assets/svgs/play.svg" alt="">Watch demo</div>
-        </div>
-        <div class="img-container">
-            <img src="./assets/images/girl1.jpg" alt="A girl pic" class="rounded bordered shadowed">
-        </div>
-    </div>
-    
-    <div id="right">
-        <div class="img-container">
-            <img src="./assets/images/girl3.jpg" alt="A girl pic" class="rounded bordered shadowed">
-        </div>
+                </div>
+            </nav>
+        </header>
 
-        <div id="principal" class="flex">
+        <div id="left">
             <div class="img-container">
-                <img src="./assets/images/men.jpg" alt="A man">
+                <img src="./assets/images/girl1.jpg" alt="A girl pic" class="rounded bordered shadowed">
             </div>
-            <div class="details flex">
-                <div class="info flex">
-                    <p class="name flex">John</p>
-                    <p class="post flex">Account Manager</p>
-                </div>
-                <a href="tel:+0000000" id="phone" class="rounded bordered flex">
-                    <i class="material-icons">phone</i>
-                </a>
+
+            <div class="descri">
+                <h1>
+                    <span>
+                        Reinventing the
+                        <img src="./assets/images/girl3.jpg" alt="A girl pic" class="rounded bordered shadowed">
+                    </span>
+                    <br>
+                    way you connect
+                </h1>
             </div>
-        </div>
 
-        <div id="discussion">
-            <div id="content">
-                <div class="chat left">
-                    <p>I need that report now :)</p>
-                </div>
+            <div class="text">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut temporibus, eaque ipsa aliquam odit.
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
 
-                <div class="chat right">
-                    <div class="img-container">
-                        <img src="./assets/images/men2.jpg" alt="A man" class="rounded bordered">
-                    </div>
-                    <p>Comming your way</p>
-                </div>
-
-                <div class="chat right">
-                    <div class="lignes">
-                        <div class="value"></div>
-                        <div class="line"></div>
-                    </div>
-                    <div class="lignes">
-                        <div class="value"></div>
-                        <div class="line"></div>
-                    </div>
-                    <div class="lignes">
-                        <div class="value"></div>
-                        <div class="line"></div>
-                    </div>
-                    <div class="lignes">
-                        <div class="value"></div>
-                        <div class="line"></div>
-                    </div>
-                    <div class="lignes">
-                        <div class="value"></div>
-                        <div class="line"></div>
-                    </div>
-
-                    <div id="graph">
-                        <div class="high"></div>
-                        <div class="high"></div>
-                        <div class="high"></div>
-                        <div class="high"></div>
-                        <div class="high"></div>
-                    </div>
-
-                    <div id="y">
-                        <div class="yList">
-                            <div class="big"></div>
-                            <div class="small"></div>
-                        </div>
-                        <div class="yList">
-                            <div class="big"></div>
-                            <div class="small"></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="buttons">
+                <button id="b1" class="button">Start trial</button>
+                <button id="b2" class="button"><span>
+                        <i class="material-icons">play_arrow</i> Watch demo
+                    </span></button>
             </div>
         </div>
 
-        <div id="cards">
-            <div class="card flex">
-                <div class="img-container active">
-                    <img src="./assets/images/girl5.jpg" class="rounded" alt="">
-                </div>
-                <div class="details">
-                    <p class="name flex">Sam</p>
-                    <p class="post flex">Product Manager</p>
-                </div>
-                <div class="mini-footer flex">
-                    <a href="#" class="material-icons" id="SamPhone">phone</a>
-                    <a href="#" class="material-icons" id="SamMsg">message</a>
-                </div>
-            </div>
+        <div id="right">
 
-            <div class="card flex" id="hasProgressBar">
-                <div class="img-container active">
-                    <img src="./assets/images/girl2.jpg" alt="" class="rounded">
-                </div>
-                <div class="details">
-                    <p class="name flex">Jane</p>
-                    <p class="post flex">CEO</p>
+            <div id="cards">
+                <div class="card flex">
+                    <div class="img-container active">
+                        <img src="./assets/images/girl5.jpg" class="rounded" alt="">
+                    </div>
+                    <div class="details">
+                        <p class="name flex">Sam</p>
+                        <p class="post flex">Product Manager</p>
+                    </div>
                     <div class="mini-footer flex">
-                        <div id="progressBar">
-                            <div id="pinkProgess"></div>
-                        </div>
-                        <div id="label">Transfeing file</div>
+                        <a href="#" class="material-icons" id="SamPhone">phone</a>
+                        <a href="#" class="material-icons" id="SamMsg">message</a>
                     </div>
+                </div>
+
+                <div class="card flex" id="hasProgressBar">
+                    <div class="img-container active">
+                        <img src="./assets/images/girl2.jpg" alt="" class="rounded">
+                    </div>
+                    <div class="details">
+                        <p class="name flex">Jane</p>
+                        <p class="post flex">CEO</p>
+                        <div class="mini-footer flex">
+                            <div id="progressBar">
+                                <div id="pinkProgess"></div>
+                            </div>
+                            <div id="label">Transfeing file</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="discussion">
+                <div id="content">
+                    <div class="chat left">
+                        <p>I need that report now :)</p>
+                    </div>
+
+                    <div class="chat right">
+                        <div class="img-container">
+                            <img src="./assets/images/men2.jpg" alt="A man" class="rounded bordered">
+                        </div>
+                        <p>Comming your way</p>
+                    </div>
+
+                    <div class="chat right">
+                        <div class="lignes">
+                            <div class="value"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="lignes">
+                            <div class="value"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="lignes">
+                            <div class="value"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="lignes">
+                            <div class="value"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="lignes">
+                            <div class="value"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="lignes">
+                            <div class="value"></div>
+                            <div class="line"></div>
+                        </div>
+
+                        <div id="graph">
+                            <div class="high"></div>
+                            <div class="high"></div>
+                            <div class="high"></div>
+                            <div class="high"></div>
+                            <div class="high"></div>
+                        </div>
+
+                        <div id="y">
+                            <div class="yList">
+                                <div class="big"></div>
+                                <div class="small"></div>
+                            </div>
+                            <div class="yList">
+                                <div class="big"></div>
+                                <div class="small"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="principal" class="flex">
+                <div class="img-container">
+                    <img src="./assets/images/men.jpg" alt="A man">
+                </div>
+                <div class="details flex">
+                    <div class="info flex">
+                        <p class="name flex">John</p>
+                        <p class="post flex">Account Manager</p>
+                    </div>
+                    <a href="tel:+0000000" id="phone" class="rounded bordered flex">
+                        <i class="material-icons">phone</i>
+                    </a>
                 </div>
             </div>
         </div>
 
-    </div>
+        <script src="./assets/js/index.js"></script>
+    </body>
 
-    <script src="./assets/js/index.js"></script>
-</body>
 </html>
