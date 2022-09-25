@@ -102,6 +102,7 @@ img.rounded {
     background-image: linear-gradient(330deg, var(--fushia), rgb(255, 0, 76), orange);
     background-image: -o-linear-gradient(330deg, var(--fushia), rgb(255, 0, 76), orange);
     background-image: -moz-linear-gradient(330deg, var(--fushia), rgb(255, 0, 76), orange);
+    background-image: -webkit-linear-gradient(330deg, var(--fushia), rgb(255, 0, 76), orange);
 }
 
 #principal .img-container {
@@ -121,6 +122,7 @@ img.rounded {
     background-image: linear-gradient(330deg, var(--fushia), rgb(255, 0, 76), orange);
     background-image: -o-linear-gradient(330deg, var(--fushia), rgb(255, 0, 76), orange);
     background-image: -moz-linear-gradient(330deg, var(--fushia), rgb(255, 0, 76), orange);
+    background-image: -webkit-linear-gradient(330deg, var(--fushia), rgb(255, 0, 76), orange);
 }
 
 .details {
@@ -197,6 +199,7 @@ img.rounded {
     background-image: linear-gradient(330deg, var(--fushia), rgb(255, 0, 76), orange);
     background-image: -o-linear-gradient(330deg, var(--fushia), rgb(255, 0, 76), orange);
     background-image: -moz-linear-gradient(330deg, var(--fushia), rgb(255, 0, 76), orange);
+    background-image: -webkit-linear-gradient(330deg, var(--fushia), rgb(255, 0, 76), orange);
     position: relative;
     top: 18px;
 }
@@ -515,7 +518,7 @@ img.rounded {
     }
 
     #principal .img-container::before {
-        content: 't';
+        content: '';
         position: absolute;
         width: 100%;
         height: 100%;
@@ -547,6 +550,7 @@ img.rounded {
         background-image: linear-gradient(330deg, var(--fushia), rgb(255, 0, 76), orange);
         background-image: -o-linear-gradient(330deg, var(--fushia), rgb(255, 0, 76), orange);
         background-image: -moz-linear-gradient(330deg, var(--fushia), rgb(255, 0, 76), orange);
+        background-image: -webkit-linear-gradient(330deg, var(--fushia), rgb(255, 0, 76), orange);
     }
 
     #discussion {
