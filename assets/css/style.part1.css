@@ -130,6 +130,7 @@ nav a:hover{
 }
 
 header::after{
+    z-index: 1000;
     content: '';
     height: 5px;
     width: 5px;
@@ -146,6 +147,7 @@ header::after{
     content: ''
 ;    height: 2px;
     width: 2px;
+     z-index: 1000;
     border-radius: 50%;
     background-color: var(--fushia);
     border: 2px solid var(--fushia);
@@ -157,6 +159,7 @@ header::after{
 
 .descri h1::before{
     content: '';
+     z-index: 1000;
     height: 2px;
     width: 2px;
     border-radius: 50%;
@@ -171,6 +174,7 @@ header::after{
 
 #phone::after{
     content: '';
+    z-index: 1000;
     height: 2px;
     width: 2px;
     border-radius: 50%;
@@ -187,6 +191,7 @@ header::after{
     content: '';
     height: 4px;
     width: 4px;
+     z-index: 1000;
     border-radius: 50%;
     background-color: var(--fushia);
     border: 2px solid var(--fushia);
