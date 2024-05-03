@@ -405,7 +405,7 @@ img.rounded {
     border: 2px thick white;
     box-shadow: -15px 15px 25px 5px rgba(56, 56, 56, 0.486);
 
-    transition: margin 250ms ease-in-out, z-index 500ms ease-in-out, transform 500ms ease-in-out;
+    transition: margin 250ms ease-in-out, transform 500ms ease-in-out;
 }
 
 .card:hover {
@@ -637,7 +637,6 @@ img.rounded {
         position: static;
         height: 100%;
         width: 100%;
-margin-left : auto;
     }
 
     nav a{
@@ -656,7 +655,7 @@ margin-left : auto;
     }
 
     .overlay-content{
-        margin-left: auto;
+        margin: auto;
     }
 
     #items, .closebtn{
